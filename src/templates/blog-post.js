@@ -25,7 +25,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          By {post.frontmatter.author}, {post.frontmatter.date}
         </p>
         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -34,7 +34,6 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
 
         <ul
           style={{
@@ -82,6 +81,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        author
         featuredImage {
           childImageSharp{
               sizes(maxWidth: 630) {

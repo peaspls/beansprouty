@@ -14,6 +14,8 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
+    const subtitle = `Life always brings surprises.`
+
     if (location.pathname === rootPath) {
       header = (
         <h1
@@ -33,6 +35,7 @@ class Template extends React.Component {
           >
             Beansprouty
           </Link>
+          <blockquote>{subtitle}</blockquote>
         </h1>
       )
     } else {
@@ -53,6 +56,7 @@ class Template extends React.Component {
           >
             Beansprouty
           </Link>
+          <blockquote>{subtitle}</blockquote>
         </h3>
       )
     }

@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/Bio'
 import Img from 'gatsby-image'
 import { rhythm } from '../utils/typography'
 
@@ -15,7 +14,6 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={siteTitle} />
-        <Bio />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
@@ -29,7 +27,15 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small
+                style={{
+                  display: 'block',
+                  marginBottom: rhythm(1),
+                }}
+              >
+                By {node.frontmatter.author}, {node.frontmatter.date}
+              </small>
+              
               <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
                 <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
               </Link>
@@ -63,6 +69,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            author
             featuredImage {
               childImageSharp{
                   sizes(maxWidth: 630) {
