@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import { rhythm, scale } from '../utils/typography'
+import './styles.css';
 
 class Template extends React.Component {
   render() {
@@ -30,7 +31,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Beansprouty
           </Link>
         </h1>
       )
@@ -40,7 +41,6 @@ class Template extends React.Component {
           style={{
             fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
-            marginBottom: rhythm(-1),
           }}
         >
           <Link
@@ -51,7 +51,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Beansprouty
           </Link>
         </h3>
       )

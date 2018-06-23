@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
+import Img from 'gatsby-image'
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
@@ -29,7 +30,12 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
+              </Link>
+              <blockquote>
+                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </blockquote>
             </div>
           )
         })}
@@ -57,6 +63,13 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            featuredImage {
+              childImageSharp{
+                  sizes(maxWidth: 630) {
+                      ...GatsbyImageSharpSizes
+                  }
+              }
+            }
           }
         }
       }

@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 import Bio from '../components/Bio'
+import Img from 'gatsby-image'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
@@ -26,6 +27,7 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
+        <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
@@ -80,6 +82,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        featuredImage {
+          childImageSharp{
+              sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
+              }
+          }
+        }
       }
     }
   }
