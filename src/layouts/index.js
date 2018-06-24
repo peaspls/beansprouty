@@ -14,13 +14,13 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
-    const subtitle = `Life always brings surprises.`
+    const subtitle = `Listen to your heart`
 
     if (location.pathname === rootPath) {
       header = (
         <h1
           style={{
-            ...scale(1.5),
+            ...scale(1.1),
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
