@@ -23,3 +23,8 @@ Then of course you have the safe [Tibits](https://www.tibits.ch/de/restaurants#t
 ![Blendteehaus](./teehaus.jpg "Blendteehaus")
 ![Food at Blendteehaus](./teehausfood.jpg "Food at Blendteehaus") 
 ![Tibits](./tibits.jpg "Tibits at the train station") 
+
+### Day trip to Zurich
+We went on a short trip to Zurich while staying in Luzern to meet my fathers cousin and his family for the first time. A quick stop at [Hiltl](https://hiltl.ch/en/) in Zurich before taking the train to Egg just outside the city where they live. If you are ever in Zurich, try Hiltl. They have so much to offer. It's similar to Tibits.
+
+![Tibetan gathering](./tibetan-gathering.jpg "Tibetan gathering with my fathers cousin") 
