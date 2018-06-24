@@ -24,4 +24,9 @@ Just two words! [Muso Koroni](https://www.muso-koroni.com/). You'll find it at J
 ### Activity
 We went to [GETFIT Fitness Club](http://getfitclub.at/) for a free workout if it's your first time there. No registration required, so easy and friendly. And when we were finished they just said "bye, have a nice day". That is how it should be in my opinion. The gym is well equipped, modern and clean. [Yogacollege](http://yogacollege.at/) is also a place I would like to recommend. They have  good offers: €10 for 10 days and €30 for 30 days. Also, the language does not seem to be an issue. I don't understand german at all and everything worked out fine for me. In the [Esterházypark](https://www.google.com/maps/place/Esterh%C3%A1zypark/@48.1972363,16.3513272,18.01z/data=!4m8!1m2!2m1!1srock+climbing!3m4!1s0x476d0789343ba7c3:0x162576c5cf15df66!8m2!3d48.1974998!4d16.3525003) you have [street workout where you can do your calisthenics](https://hardbodyhang.com/project/wien-au-esterhazy-park)
 
+![Bikram collage](./bikram-collage.jpg "Us at Yogacollege")
 ![Hardbodyhang](./hardbodyhang.jpg "Street workout in Esterházypark")
+
+We were also lucky enough to experience for the first time [Anonymous for the voiceless](https://www.anonymousforthevoiceless.org/) and their Cube of Truth at MuseumsQuartier.
+
+![Cube of Truth](./cube-of-truth.jpg "Anonymous for the voiceless at MuseumsQuartier")
