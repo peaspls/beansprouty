@@ -5,7 +5,7 @@ date: "2018-04-27T11:11:03.284Z"
 featuredImage: "./juice.jpg"
 ---
 
-> A sad unhealthy place with pollution and cigarette filling your lungs. Isn't it funny when you've seen fantastic pictures of a place and when you get there it's totally not like the pictures. Well, we tried to make the best of it and we did find a few good places :).
+> Pollution and smoke from cigarettes everywhere. Isn't it funny when you've seen fantastic pictures of a place and when you get there it's totally not what you expected. Well, we tried to make the best of it and we did find a few good places :).
 
 ### 30 mars - 27 april 2018
 We stayed at an Airbnb appartment in Goldschlagstraße, about 5 minutes walking distance from Westbahnhof. Let me just say, this is **not** the area you want to stay in. It's a poor neighourhood with people who look like they wish they could be somewhere else. I frankly did not feel safe walking outside after 8 pm. Smoking seems extremly popular here for some reason. So does not giving a shit :/. When we got there we immediately thought it was a mistake to book the place for a month. 
