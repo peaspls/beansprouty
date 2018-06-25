@@ -2,7 +2,7 @@
 title: Vienna, Austria
 author: C. N. Aa. Thondrup
 date: "2018-04-27T11:11:03.284Z"
-featuredImage: "./vienna.jpg"
+featuredImage: "./juice.jpg"
 ---
 
 > A sad unhealthy place with pollution and cigarette filling your lungs. Isn't it funny when you've seen fantastic pictures of a place and when you get there it's totally not like the pictures. Well, we tried to make the best of it and we did find a few good places :).

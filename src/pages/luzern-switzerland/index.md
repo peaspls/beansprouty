@@ -5,7 +5,7 @@ date: "2018-05-03T12:00:00.000Z"
 featuredImage: "./luzern.jpg"
 ---
 
-> Open areas, a lake, a mountain view, nice weather, swiss chocolate. Perhaps more tourists than expected. But overall a good first impression.
+> Open areas, a lake, a mountain view, nice weather, swiss chocolate. Perhaps more tourists than expected, but overall a good first impression.
 
 ### 28 april - 3 may 2018
 The city center is small and easy to get around. There is a lot of people here, and a lot of tourists it seems. After having walked around with our luggage, we finally found our hotel. We tried to figure out how to get inside, but after several failed attempts to contact the hotel, we gave up. We looked up another hotel 15 minutes by bus outside the city called Hotel Waldegg. Nice small clean hotel with modern interior, but not good value for your money. We stayed one night before moving on to an Airbnb apartment in Eschenbach, 15 minutes by train north of Luzern. Here we stayed from 29 april - 3 mai.

@@ -5,7 +5,7 @@ date: "2018-04-28T09:00:00.000Z"
 featuredImage: "./feldkirch.jpg"
 ---
 
-> The mountains we thought, far away from the cities where nature lives we thought. Ok, so that's not entirely false, but **wow** were we surprised. Not in a good way!
+> The mountains we thought, far away from the cities in nature thought. Ok, so that's not entirely false, but we were surprised. Not in a good way!
 
 ### 27 - 28 april 2018
 We had just gotten off the train from Vienna which is about a 6 hour journey. Our destination was Switzerland, but we wanted to take a break from a long train ride. We had decided to stay at the Hotel am Bahnhof 1 minute walking distance from Feldkirch train station. So it's really close to the train station, that was good since we were only going to stay there for one night. Sadly though, it was the worst hotel we had ever stayed at. We seriously dubbed it "Hell am Bahnhof". Keep away! I don't want to put too much energy into writing a long story about this place, so I'll be short. Everything in the room including the bed sheets smelled of cigarettes. I was able to fall asleep around 3 am after they finally shut off the music coming from the bar below us. It looked like the locals sitting there were around 50+, but it was difficult to see through all the smoke in the room. Yes, you have to go passed to bar to get to your room. At 6 am I woke up from intense cigarette smoke and noise from outside the window where construction workers were doing their job and smoking. A don't think you will enjoy this place unless you are a chain smoking alcoholic. Oh, one thing I cannot leave unsaid is that we found left over half eaten food in the closet. Ha ha! This place was cheap though.
