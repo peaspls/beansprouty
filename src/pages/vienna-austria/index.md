@@ -30,3 +30,5 @@ We went to [GETFIT Fitness Club](http://getfitclub.at/) for a free workout if it
 We were also lucky enough to experience for the first time [Anonymous for the voiceless](https://www.anonymousforthevoiceless.org/) and their Cube of Truth at MuseumsQuartier.
 
 ![Cube of Truth](./cube-of-truth.jpg "Anonymous for the voiceless at MuseumsQuartier")
+
+![Go Vegan](./govegan-vienna.jpg "Me pointing to tagging.")
