@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 
 import Img from 'gatsby-image'
 import { rhythm } from '../utils/typography'
-import { relative } from 'path';
 
 class BlogIndex extends React.Component {
   render() {
@@ -43,19 +42,16 @@ class BlogIndex extends React.Component {
                 >
                   {title}
                 </h3>
-                <small
-                  style={{
-                    display: 'block',
-                    marginBottom: rhythm(1),
-                  }}
-                >
+                <small className='index-subtitle'>
                   {node.frontmatter.date}
                 </small>
-                <blockquote
+                <blockquote className='index-description'
                   style={{
                     marginBottom: 0,
                     color: '#ccc',
-                    borderLeft: 0
+                    borderLeft: 0,
+                    paddingLeft: 0,
+                    marginLeft: 0
                   }}
                 >
                   <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
