@@ -9,3 +9,12 @@ h1 {
 .gatsby-image-outer-wrapper {
     margin-bottom: 1.75rem;
 }
+
+@media screen and (max-width: 660px) {
+    .index-post h3 {
+        font-size: 1.1rem;
+    }
+    blockquote {
+        font-size: 0.9rem;
+    }
+}

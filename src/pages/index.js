@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 
 import Img from 'gatsby-image'
 import { rhythm } from '../utils/typography'
+import { relative } from 'path';
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,33 +17,52 @@ class BlogIndex extends React.Component {
         <Helmet title={siteTitle} />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
+          return (         
+            <Link key={node.fields.slug} style={{ boxShadow: 'none' }} to={node.fields.slug}
+              style={{
+                position: 'relative',
+                display: 'block'
+              }}
+            >
+              <div className='index-post'
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  color: 'white',
+                  position: 'absolute',
+                  width: '100%',
+                  bottom: 0,
+                  zIndex: 1,
+                  padding: 15,
+                  background: 'rgba(0,0,0, 0.6)'
                 }}
               >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+                <h3
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                    marginTop: 0
+                  }}
+                >
                   {title}
-                </Link>
-              </h3>
-              <small
-                style={{
-                  display: 'block',
-                  marginBottom: rhythm(1),
-                }}
-              >
-                By {node.frontmatter.author}, {node.frontmatter.date}
-              </small>
-              
-              <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
-              </Link>
-              <blockquote>
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-              </blockquote>
-            </div>
+                </h3>
+                <small
+                  style={{
+                    display: 'block',
+                    marginBottom: rhythm(1),
+                  }}
+                >
+                  {node.frontmatter.date}
+                </small>
+                <blockquote
+                  style={{
+                    marginBottom: 0,
+                    color: '#ccc',
+                    borderLeft: 0
+                  }}
+                >
+                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                </blockquote>
+              </div>
+              <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
+            </Link>
           )
         })}
       </div>
