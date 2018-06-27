@@ -11,7 +11,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div>
+      <div className='post'>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <Navigator pathContext={this.props.pathContext} />
         <h1>{post.frontmatter.title}</h1>

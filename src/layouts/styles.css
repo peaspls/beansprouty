@@ -6,7 +6,7 @@ h1 {
     text-align: center;
 }
 
-.gatsby-image-outer-wrapper {
+.post .gatsby-image-outer-wrapper {
     margin-bottom: 1.75rem;
 }
 .index-subtitle {
@@ -23,5 +23,6 @@ h1 {
     }
     .index-description {
         font-size: 0.9rem;
+        line-height: 1.5;
     }
 }
