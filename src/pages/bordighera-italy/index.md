@@ -7,7 +7,7 @@ featuredImage: "./bordighera.jpg"
 
 > Fantastic beach, friendly people, sunny weather, quiet area, lots of good food, not too expensive and the ice cream is just the best. Just wow!
 
-### 7 - 29 june 2018
+### 7 june - 3 july 2018
 We booked an apartment through Airbnb for one week. It was such a wonderful place so we extended our stay with another week. After two weeks of heaven we had to leave, so we checked-out and took the train to Nice, France. We tried to look for a place in Nice, but to make a long story short we couldn't find anything and had to ask Anna, the woman who owns the apartment we rented in Bordighera, if we could come back and stay another 8 days. It was difficult to leave such a nice place. So to wrap it up: this place is highly recommended. There aren't many tourists here in the beginning of june. 
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23041.421455722793!2d7.649682565387162!3d43.789925963461336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdf3b7493a1e09%3A0x4e876555b0b2bb3!2s18012+Bordighera%2C+Province+of+Imperia!5e0!3m2!1sen!2sit!4v1529943551869" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
