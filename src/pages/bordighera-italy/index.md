@@ -27,8 +27,6 @@ There are a lot of public beaches here so not worry if you don't want to pay to 
 
 ![Beach](./beach.jpg "One of the public beaches") 
 
-![Swimming](./bikini.jpg "A diving mask is €20") 
-
 ![Stones](./stones.jpg "After a day at the beach") 
 
 ![Camera](./camera-bordighera.jpg "Me setting up the camera for filming") 
