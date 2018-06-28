@@ -6,6 +6,23 @@ h1 {
     text-align: center;
 }
 
-.gatsby-image-outer-wrapper {
+.post .gatsby-image-outer-wrapper {
     margin-bottom: 1.75rem;
+}
+.index-subtitle {
+    display: block;
+    margin-bottom: 1.75rem;
+}
+
+@media screen and (max-width: 600px) {
+    .index-post h3 {
+        font-size: 1.1rem;
+    }
+    .index-subtitle {
+        margin-bottom: 0.8rem;
+    }
+    .index-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
 }

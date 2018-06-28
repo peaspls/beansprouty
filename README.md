@@ -1,9 +1,11 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# Beansprouty.com
+A Travel blog by Christoffer N. Aa. Thondrup. Used the Gatsby starter for creating a blog and Netlify for deployment. Awesome tools!
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+## Install
+`npm i`
 
 ## Running in development
-`gatsby develop`
+`npm run develop`
+
+## Build for production
+`npm run build`
