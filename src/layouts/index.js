@@ -21,8 +21,16 @@ class Template extends React.Component {
         <h1
           style={{
             ...scale(1.1),
-            marginBottom: rhythm(1.5),
+            marginBottom: 0,
             marginTop: 0,
+            display: 'flex',
+            flexDirection: 'column',
+            height: '100vh',
+            justifyContent: 'center',
+            alignItems: 'center',
+            position: 'relative',
+            color: 'white',
+            background: 'linear-gradient(0deg, #ffffff 10%,#49a4ff 90%)'
           }}
         >
           <Link
@@ -33,15 +41,17 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            <img src="/icons/sprout.svg" 
-              style={{
-                width: 48,
-                margin: 0
-              }}
-            />
             Beansprouty
           </Link>
           <blockquote>{subtitle}</blockquote>
+          <img src="/icons/sprout.svg" 
+              style={{
+                width: 48,
+                margin: 0,
+                position: 'absolute',
+                bottom: 0
+              }}
+            />
         </h1>
       )
     } else {
@@ -50,6 +60,10 @@ class Template extends React.Component {
           style={{
             fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            maxWidth: rhythm(24),
+            padding: `0 ${rhythm(3 / 4)}`,
           }}
         >
           <Link
@@ -75,18 +89,26 @@ class Template extends React.Component {
     return (
       <div
         style={{
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)} 0`,
+
         }}
       >
         {header}
-        {children()}
+        <div
+          style={{
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            maxWidth: rhythm(24),
+            padding: `0 ${rhythm(3 / 4)}`,
+          }}
+        >
+          {children()}
+        </div>
         <footer
           style={{
-            padding: '50px 0',
-            textAlign: 'center'
+            marginTop: '-16px',
+            padding: '60px 60px',
+            textAlign: 'center',
+            background: '#B8D078'
           }}
         >
           <p>

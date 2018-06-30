@@ -30,6 +30,7 @@ class BlogPostTemplate extends React.Component {
         <hr
           style={{
             marginBottom: rhythm(1),
+            background: 'none'
           }}
         />
         <Navigator pathContext={this.props.pathContext} />
