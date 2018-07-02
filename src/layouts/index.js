@@ -44,7 +44,7 @@ class Template extends React.Component {
             Beansprouty
           </Link>
           <blockquote>{subtitle}</blockquote>
-          <img src="/icons/sprout.svg" 
+          <img src="/icons/freepik/sprout.svg" 
               style={{
                 width: 48,
                 margin: 0,
@@ -74,7 +74,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            <img src="/icons/sprout.svg" 
+            <img src="/icons/freepik/sprout.svg" 
               style={{
                 width: 32,
                 margin: 0
@@ -105,14 +105,14 @@ class Template extends React.Component {
         </div>
         <footer
           style={{
-            marginTop: '-16px',
+            marginTop: '-24px',
             padding: '60px 60px',
             textAlign: 'center',
             background: '#B8D078'
           }}
         >
           <p>
-            Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            Icons made by Freepik from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
           </p>
           <p>
             Created by Christoffer N. Aa. Thondrup.
