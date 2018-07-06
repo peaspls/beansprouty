@@ -2,7 +2,7 @@
  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
  <g>
   <title>background</title>
-  <rect fill="#fff" id="canvas_background" height="62" width="335" y="-1" x="-1"/>
+  <rect fill="#fff" opacity="0.0" id="canvas_background" height="62" width="335" y="-1" x="-1"/>
  </g>
  <g>
   <title>Layer 1</title>
