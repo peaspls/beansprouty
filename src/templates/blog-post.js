@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
 import Navigator from '../components/navigator'
+import Footer from '../components/footer'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div className='post' style={{
+      <div style={{
         maxWidth: 800,
         marginLeft: 'auto',
         marginRight: 'auto'
@@ -34,14 +35,10 @@ class BlogPostTemplate extends React.Component {
         </p>
         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
         <div dangerouslySetInnerHTML={{ __html: post.html }} style={{
-          margin: 30
+          margin: 30,
+          overflow: 'hidden'
         }}/>
-        <hr
-          style={{
-            background: 'none'
-          }}
-        />
-        <Navigator pathContext={this.props.pathContext} />
+        <Footer />
       </div>
     )
   }

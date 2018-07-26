@@ -12,7 +12,7 @@ class Post extends React.Component {
         const icon = this.props.icon
 
         return (   
-            <div key={slug}>   
+            <div>   
               <img src="svg/line.svg" 
                 style={{
                   display: 'block',
@@ -26,7 +26,7 @@ class Post extends React.Component {
                 }}
               >
                 <Img sizes={featuredImage.childImageSharp.sizes} />
-                <div className='index-post'
+                <div
                   style={{
                     color: 'white',
                     position: 'absolute',
@@ -34,7 +34,8 @@ class Post extends React.Component {
                     bottom: 0,
                     zIndex: 1,
                     padding: 15,
-                    background: 'rgba(0,0,0, 0.6)'
+                    background: 'rgba(0,0,0, 0.6)',
+                    boxSizing: 'border-box'
                   }}
                 >
                   <h3
@@ -45,20 +46,9 @@ class Post extends React.Component {
                   >
                     {title}
                   </h3>
-                  <small className='index-subtitle'>
+                  <small>
                     {date}
                   </small>
-                  <blockquote className='index-description'
-                    style={{
-                      marginBottom: 0,
-                      color: '#ccc',
-                      borderLeft: 0,
-                      paddingLeft: 0,
-                      marginLeft: 0
-                    }}
-                  >
-                    <p style={{display: 'none'}} dangerouslySetInnerHTML={{ __html: excerpt }} />
-                  </blockquote>
                 </div>
               </Link>
               <img src="svg/line.svg" 
