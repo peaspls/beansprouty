@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
-import { rhythm, scale } from '../utils/typography'
 import Navigator from '../components/navigator'
 
 class BlogPostTemplate extends React.Component {
@@ -11,25 +10,34 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div className='post'>
+      <div className='post' style={{
+        maxWidth: 800,
+        marginLeft: 'auto',
+        marginRight: 'auto'
+      }} >
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <Navigator pathContext={this.props.pathContext} />
-        <h1>{post.frontmatter.title}</h1>
+        <h1 style={{
+          marginLeft: 30,
+          marginRight: 30,
+          marginBottom: 0
+        }}>{post.frontmatter.title}</h1>
         <p
           style={{
-            ...scale(-1 / 5),
             display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            marginTop: 0,
+            marginLeft: 30,
+            marginRight: 30
           }}
         >
           By {post.frontmatter.author}, {post.frontmatter.date}
         </p>
         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div dangerouslySetInnerHTML={{ __html: post.html }} style={{
+          margin: 30
+        }}/>
         <hr
           style={{
-            marginBottom: rhythm(1),
             background: 'none'
           }}
         />

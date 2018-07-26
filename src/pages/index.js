@@ -1,10 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
-import Img from 'gatsby-image'
-import { rhythm } from '../utils/typography'
+import Post from '../components/post'
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,76 +10,24 @@ class BlogIndex extends React.Component {
     const icons = ['bee', 'bird', 'chicken', 'cow', 'fish', 'hen', 'pig', 'sheep', 'turtle'];
 
     return (
-      <div>
+      <div className='posts' style={{
+        maxWidth: 600,
+        marginLeft: 'auto',
+        marginRight: 'auto'
+      }} >
         <Helmet title={siteTitle} />
         {posts.map(({ node }) => {
           const iconIndex = parseInt(Math.random() * icons.length);
           const icon = `/icons/freepik/${icons[iconIndex]}.svg`;
           const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (   
-            <div key={node.fields.slug}>   
-              <img src="svg/line.svg" 
-                style={{
-                  display: 'block',
-                  margin: '0 auto'
-                }}
-              />   
-              <Link to={node.fields.slug}
-                style={{
-                  position: 'relative',
-                  display: 'block'
-                }}
-              >
-                <div className='index-post'
-                  style={{
-                    color: 'white',
-                    position: 'absolute',
-                    width: '100%',
-                    bottom: 0,
-                    zIndex: 1,
-                    padding: 15,
-                    background: 'rgba(0,0,0, 0.6)'
-                  }}
-                >
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                      marginTop: 0
-                    }}
-                  >
-                    {title}
-                  </h3>
-                  <small className='index-subtitle'>
-                    {node.frontmatter.date}
-                  </small>
-                  <blockquote className='index-description'
-                    style={{
-                      marginBottom: 0,
-                      color: '#ccc',
-                      borderLeft: 0,
-                      paddingLeft: 0,
-                      marginLeft: 0
-                    }}
-                  >
-                    <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-                  </blockquote>
-                </div>
-                <Img sizes={node.frontmatter.featuredImage.childImageSharp.sizes} />
-              </Link>
-              <img src="svg/line.svg" 
-                style={{
-                  display: 'block',
-                  margin: '0 auto'
-                }}
-              />
-              <img src={icon}
-                style={{
-                  width: 48,
-                  display: 'block',
-                  margin: '0 auto'
-                }}
-              />
-            </div>
+
+          return (
+            <Post icon={icon} 
+                  slug={node.fields.slug} 
+                  title={title} 
+                  date={node.frontmatter.date} 
+                  featuredImage={node.frontmatter.featuredImage} 
+                  excerpt={node.excerpt} />
           )
         })}
       </div>

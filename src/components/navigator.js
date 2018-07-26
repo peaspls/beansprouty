@@ -13,7 +13,7 @@ class Navigator extends React.Component {
         justifyContent: 'space-between',
         listStyle: 'none',
         padding: 0,
-        margin: '0 0 20px',
+        margin: '0 30px 20px',
         }}
     >
         {previous && (
