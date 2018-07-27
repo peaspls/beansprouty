@@ -1,43 +1,22 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
-import Img from 'gatsby-image'
 import Navigator from '../components/navigator'
 import Footer from '../components/footer'
+import TopBar from '../components/topBar'
+import BlogPost from '../components/blogPost'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const title = post.frontmatter.title || siteTitle
 
     return (
-      <div style={{
-        maxWidth: 800,
-        marginLeft: 'auto',
-        marginRight: 'auto'
-      }} >
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <Navigator pathContext={this.props.pathContext} />
-        <h1 style={{
-          marginLeft: 30,
-          marginRight: 30,
-          marginBottom: 0
-        }}>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            display: 'block',
-            marginTop: 0,
-            marginLeft: 30,
-            marginRight: 30
-          }}
-        >
-          By {post.frontmatter.author}, {post.frontmatter.date}
-        </p>
-        <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} style={{
-          margin: 30,
-          overflow: 'hidden'
-        }}/>
+      <div>
+        <Helmet title={title} />
+        <TopBar title={title} pathContext={this.props.pathContext} />
+        <BlogPost post={post} />
         <Footer />
       </div>
     )

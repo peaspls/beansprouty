@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Splash from '../components/splash'
-import Posts from '../components/posts'
+import ArticleCards from '../components/articleCards'
 import Footer from '../components/footer'
 
 class BlogIndex extends Component {
@@ -14,7 +14,7 @@ class BlogIndex extends Component {
       <div>
         <Splash />
         <Helmet title={siteTitle} />
-        <Posts posts={posts} />
+        <ArticleCards posts={posts} />
         <Footer />
       </div>
     )

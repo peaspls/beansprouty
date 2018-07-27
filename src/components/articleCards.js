@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import get from 'lodash/get'
-import Post from '../components/post'
+import ArticleCard from '../components/articleCard'
 
-class Posts extends Component {
+class ArticleCards extends Component {
     render() {
         const icons = ['bee', 'bird', 'chicken', 'cow', 'fish', 'hen', 'pig', 'sheep', 'turtle'];
-        const posts = this.props.posts;
+        const { posts } = this.props;
         
         return (
             <div>
@@ -22,7 +22,7 @@ class Posts extends Component {
                                 margin: '0 auto'
                                 }}
                             />   
-                            <Post key={node.fields.slug}
+                            <ArticleCard key={node.fields.slug}
                                 slug={node.fields.slug} 
                                 title={title} 
                                 date={node.frontmatter.date} 
@@ -49,4 +49,4 @@ class Posts extends Component {
     }
 }
 
-export default Posts;
+export default ArticleCards;
