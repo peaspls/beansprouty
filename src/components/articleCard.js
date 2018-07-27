@@ -51,7 +51,7 @@ class ArticleCard extends React.Component {
         <Card className={classes.card} style={{ margin: 'auto', maxWidth: 500}}>
           <CardHeader
             avatar={
-              <Avatar aria-label="Recipe" className={classes.avatar}>
+              <Avatar aria-label="Place" className={classes.avatar}>
                 {avatar}
               </Avatar>
             }
@@ -66,14 +66,6 @@ class ArticleCard extends React.Component {
               {excerpt}
             </Typography>
           </CardContent>
-          <CardActions className={classes.actions} disableActionSpacing>
-            <IconButton aria-label="Add to favorites">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton aria-label="Share">
-              <ShareIcon />
-            </IconButton>
-          </CardActions>
         </Card>
       </div>
     );
