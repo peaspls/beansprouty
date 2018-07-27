@@ -13,15 +13,9 @@ class BlogIndex extends Component {
     return (
       <div>
         <Splash />
-        <div style={{
-          maxWidth: 600,
-          marginLeft: 'auto',
-          marginRight: 'auto'
-        }} >
-          <Helmet title={siteTitle} />
-          <Posts posts={posts} />
-          <Footer />
-        </div>
+        <Helmet title={siteTitle} />
+        <Posts posts={posts} />
+        <Footer />
       </div>
     )
   }

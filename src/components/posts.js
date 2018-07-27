@@ -15,13 +15,33 @@ class Posts extends Component {
                     const title = get(node, 'frontmatter.title') || node.fields.slug
 
                     return (
-                    <Post key={node.fields.slug}
-                        icon={icon} 
-                        slug={node.fields.slug} 
-                        title={title} 
-                        date={node.frontmatter.date} 
-                        featuredImage={node.frontmatter.featuredImage} 
-                        excerpt={node.excerpt} />
+                        <div>
+                            <img src="svg/line.svg" 
+                                style={{
+                                display: 'block',
+                                margin: '0 auto'
+                                }}
+                            />   
+                            <Post key={node.fields.slug}
+                                slug={node.fields.slug} 
+                                title={title} 
+                                date={node.frontmatter.date} 
+                                featuredImage={node.frontmatter.featuredImage} 
+                                excerpt={node.excerpt} />
+                            <img src="svg/line.svg" 
+                                style={{
+                                display: 'block',
+                                margin: '0 auto'
+                                }}
+                            />
+                            <img src={icon}
+                                style={{
+                                width: 48,
+                                display: 'block',
+                                margin: '0 auto'
+                                }}
+                            />
+                        </div>
                     )
                 }) }
             </div>

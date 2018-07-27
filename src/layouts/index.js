@@ -1,5 +1,6 @@
 import React from 'react'
 
+import 'typeface-roboto';
 import './styles.css';
 
 class Template extends React.Component {
