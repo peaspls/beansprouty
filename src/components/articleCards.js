@@ -11,7 +11,7 @@ class ArticleCards extends Component {
             <div>
                 { posts.map(({ node }) => {
                     const iconIndex = parseInt(Math.random() * icons.length);
-                    const icon = `/icons/freepik/${icons[iconIndex]}.svg`;
+                    const icon = `icons/freepik/${icons[iconIndex]}.svg`;
                     const title = get(node, 'frontmatter.title') || node.fields.slug
 
                     return (

@@ -34,7 +34,7 @@ class Splash extends Component {
                 paddingTop: 15
               }}>Listen to your heart</div>
             </div>
-            <img src="/icons/freepik/sprout.svg" 
+            <img src="icons/freepik/sprout.svg" 
                 style={{
                   width: 48,
                   margin: 0,
