@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
-import Navigator from '../components/navigator'
 import Footer from '../components/footer'
 import TopBar from '../components/topBar'
 import BlogPost from '../components/blogPost'

@@ -15,14 +15,15 @@ class ArticleCards extends Component {
                     const title = get(node, 'frontmatter.title') || node.fields.slug
 
                     return (
-                        <div>
+                        <div key={node.fields.slug}>
                             <img src="svg/line.svg" 
                                 style={{
-                                display: 'block',
-                                margin: '0 auto'
+                                    display: 'block',
+                                    margin: '0 auto',
+                                    height: 40
                                 }}
                             />   
-                            <ArticleCard key={node.fields.slug}
+                            <ArticleCard
                                 slug={node.fields.slug} 
                                 title={title} 
                                 date={node.frontmatter.date} 
@@ -30,8 +31,9 @@ class ArticleCards extends Component {
                                 excerpt={node.excerpt} />
                             <img src="svg/line.svg" 
                                 style={{
-                                display: 'block',
-                                margin: '0 auto'
+                                    display: 'block',
+                                    margin: '0 auto',
+                                    height: 40
                                 }}
                             />
                             <img src={icon}
