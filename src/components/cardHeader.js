@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class cardHeader extends Component {
+class CardHeader extends Component {
     render() {
         const { title, subheader } = this.props
 
@@ -33,4 +33,4 @@ class cardHeader extends Component {
     }
 }
 
-export default cardHeader;
+export default CardHeader;

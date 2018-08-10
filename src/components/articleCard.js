@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Card from './card';
-import CardHeader from './CardHeader';
+import CardHeader from './cardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Link from 'gatsby-link'
