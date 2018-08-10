@@ -9,7 +9,7 @@ class Splash extends Component {
               marginTop: 0,
               display: 'flex',
               flexDirection: 'column',
-              height: '95vh',
+              height: 'calc(100vh - 40px)',
               justifyContent: 'center',
               alignItems: 'center',
               position: 'relative'
