@@ -12,8 +12,8 @@ class BlogIndex extends Component {
 
     return (
       <div>
-        <Splash />
         <Helmet title={siteTitle} />
+        <Splash />
         <BlogPostCards posts={posts} />
         <Footer />
       </div>
