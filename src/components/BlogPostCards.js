@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import get from 'lodash/get'
-import ArticleCard from '../components/articleCard'
-import Line from '../components/line'
+import BlogPostCard from '../components/BlogPostCard'
+import CardSeparatorLine from '../components/CardSeparatorLine'
 
-class ArticleCards extends Component {
+class BlogPostCards extends Component {
     render() {
         const icons = ['bee', 'bird', 'chicken', 'cow', 'fish', 'hen', 'pig', 'sheep', 'turtle'];
         const { posts } = this.props;
@@ -17,14 +17,14 @@ class ArticleCards extends Component {
 
                     return (
                         <div key={node.fields.slug}>
-                            <Line />   
-                            <ArticleCard
+                            <CardSeparatorLine />   
+                            <BlogPostCard
                                 slug={node.fields.slug} 
                                 title={title} 
                                 date={node.frontmatter.date} 
                                 featuredImage={node.frontmatter.featuredImage} 
                                 excerpt={node.excerpt} />
-                            <Line />
+                            <CardSeparatorLine />
                             <img src={icon}
                                 style={{
                                 width: 48,
@@ -40,4 +40,4 @@ class ArticleCards extends Component {
     }
 }
 
-export default ArticleCards;
+export default BlogPostCards;

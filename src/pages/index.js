@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Splash from '../components/splash'
-import ArticleCards from '../components/articleCards'
-import Footer from '../components/footer'
+import Splash from '../components/Splash'
+import BlogPostCards from '../components/BlogPostCards'
+import Footer from '../components/Footer'
 
 class BlogIndex extends Component {
   render() {
@@ -14,7 +14,7 @@ class BlogIndex extends Component {
       <div>
         <Splash />
         <Helmet title={siteTitle} />
-        <ArticleCards posts={posts} />
+        <BlogPostCards posts={posts} />
         <Footer />
       </div>
     )
@@ -22,7 +22,6 @@ class BlogIndex extends Component {
 }
 
 export default BlogIndex
-
 
 export const pageQuery = graphql`
   query IndexQuery {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Line extends Component {
+class CardSeparatorLine extends Component {
     render() {
         return (
             <img src="svg/line.svg" 
@@ -14,4 +14,4 @@ class Line extends Component {
     }
 }
 
-export default Line;
+export default CardSeparatorLine;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Img from 'gatsby-image'
 
-class blogPost extends Component {
+class BlogPost extends Component {
     render() {
         const { post } = this.props;
 
@@ -17,4 +17,4 @@ class blogPost extends Component {
     }
 }
 
-export default blogPost;
+export default BlogPost;

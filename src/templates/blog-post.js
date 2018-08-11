@@ -1,9 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
-import Footer from '../components/footer'
-import TopBar from '../components/topBar'
-import BlogPost from '../components/blogPost'
+import Footer from '../components/Footer'
+import TopBar from '../components/TopBar'
+import BlogPost from '../components/BlogPost'
 
 class BlogPostTemplate extends React.Component {
   render() {

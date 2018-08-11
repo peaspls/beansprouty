@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Card from './card';
+import Card from './Card';
 import CardHeader from './cardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
-class ArticleCard extends Component {
+class BlogPostCard extends Component {
   render() {
     const { slug, title, date, excerpt, featuredImage } = this.props;
 
@@ -28,4 +28,4 @@ class ArticleCard extends Component {
   }
 }
 
-export default ArticleCard;
+export default BlogPostCard;
