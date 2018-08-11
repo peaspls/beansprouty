@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Card from './Card';
-import CardHeader from './cardHeader';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
+import CardHeader from './CardHeader';
+import CardContent from './CardContent';
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
@@ -18,9 +17,7 @@ class BlogPostCard extends Component {
             <Img sizes={featuredImage.childImageSharp.sizes} />
           </Link>
           <CardContent>
-            <Typography component="p">
-              {excerpt}
-            </Typography>
+            {excerpt}
           </CardContent>
         </Card>
       </div>
