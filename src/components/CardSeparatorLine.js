@@ -7,6 +7,7 @@ class CardSeparatorLine extends Component {
         const style = {
             display: 'block',
             margin: '0 auto',
+            width: 1,
             height: height
         };
 
