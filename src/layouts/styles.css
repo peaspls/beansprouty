@@ -31,13 +31,3 @@ blockquote:before {
 blockquote p {
     margin: 0;
 }
-
-.blog-post-featured-image {
-    max-width: 800px;
-    margin: 0 auto;
-}
-@media (min-width: 800px) {
-    .blog-post-featured-image {
-        margin: 20px auto;
-    }
-}

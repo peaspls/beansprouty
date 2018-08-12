@@ -6,7 +6,10 @@ class BlogPost extends Component {
         const { post } = this.props;
 
         return (
-            <div className='blog-post-featured-image'>
+            <div style={{
+                maxWidth: 800,
+                margin: '0 auto'
+            }}>
                 <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
                 <div dangerouslySetInnerHTML={{ __html: post.html }} style={{
                     margin: 30,

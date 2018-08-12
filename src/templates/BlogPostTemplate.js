@@ -14,7 +14,7 @@ class BlogPostTemplate extends React.Component {
     return (
       <div>
         <Helmet title={title} />
-        <TopBar title={title} pathContext={this.props.pathContext} />
+        <TopBar title={title} />
         <BlogPost post={post} />
         <Footer />
       </div>
