@@ -17,7 +17,7 @@ class TopBar extends Component {
                     <Link to='/' rel="home">
                         <IconButton color="inherit" aria-label="Menu" style={{
                             margin: '5px 20px 5px 5px',
-                            color: '#B8D078',
+                            color: '#000',
                         }}>
                             <ArrowBack />
                         </IconButton>
