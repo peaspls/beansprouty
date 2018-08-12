@@ -17,14 +17,14 @@ class BlogPostCards extends Component {
 
                     return (
                         <div key={node.fields.slug}>
-                            <CardSeparatorLine />   
+                            <CardSeparatorLine height='70px' />   
                             <BlogPostCard
                                 slug={node.fields.slug} 
                                 title={title} 
                                 date={node.frontmatter.date} 
                                 featuredImage={node.frontmatter.featuredImage} 
                                 excerpt={node.excerpt} />
-                            <CardSeparatorLine />
+                            <CardSeparatorLine height='30px' />
                             <img src={icon}
                                 style={{
                                 width: 48,
