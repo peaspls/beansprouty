@@ -1,0 +1,12 @@
+<svg 
+    xmlns="http://www.w3.org/2000/svg"
+    width="1" 
+    height="40">
+    <line 
+        x1="0" 
+        y1="0" 
+        x2="0" 
+        y2="40" 
+        stroke="black" 
+        opacity="0.5" />
+</svg>
