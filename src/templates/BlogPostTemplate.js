@@ -40,10 +40,10 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         author
         featuredImage {
-          childImageSharp{
-              sizes(maxWidth: 630) {
-                  ...GatsbyImageSharpSizes
-              }
+          childImageSharp {
+            sizes(maxWidth: 630) {
+              ...GatsbyImageSharpSizes
+            }
           }
         }
       }

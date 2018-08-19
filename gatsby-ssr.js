@@ -17,7 +17,7 @@ exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString, setHeadCompon
       {React.cloneElement(bodyComponent, {
         pageContext,
       })}
-    </JssProvider>,
+    </JssProvider>
   );
 
   replaceBodyHTMLString(bodyHTML);

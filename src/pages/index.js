@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Splash from '../components/Splash'
@@ -42,10 +42,10 @@ export const pageQuery = graphql`
             title
             author
             featuredImage {
-              childImageSharp{
-                  sizes(maxWidth: 630) {
-                      ...GatsbyImageSharpSizes
-                  }
+              childImageSharp {
+                sizes(maxWidth: 630) {
+                  ...GatsbyImageSharpSizes
+                }
               }
             }
           }
