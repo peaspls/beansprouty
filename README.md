@@ -1,5 +1,8 @@
 # Beansprouty.com
-A Travel blog by Christoffer N. Aa. Thondrup. Used the Gatsby starter for creating a blog, React and Netlify. Website can be found at https://beansprouty.netlify.com
+A Travel blog by Christoffer N. Aa. Thondrup. Website can be found at https://beansprouty.netlify.com
+
+## Tech
+Gatsby, React
 
 ## Install
 `npm i`
