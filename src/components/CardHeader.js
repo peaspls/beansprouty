@@ -7,7 +7,7 @@ class CardHeader extends Component {
     const style = {
       root: {
         flex: '1 1 auto',
-        padding: 16,
+        margin: '20px 0'
       },
       title: {
         minWidth: 120,

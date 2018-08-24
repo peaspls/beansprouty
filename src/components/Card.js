@@ -11,13 +11,17 @@ class Card extends Component {
           '0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12)',
         borderRadius: 4,
         backgroundColor: '#fff',
-        padding: '16px',
-        maxWidth: 500,
+        padding: 0,
+        maxWidth: 400,
         margin: 'auto',
       },
     }
 
-    return <div style={style.root}>{children}</div>
+    return (
+      <div style={style.root}>
+        {children}
+      </div>
+    )
   }
 }
 

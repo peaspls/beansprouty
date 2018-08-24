@@ -6,12 +6,12 @@ class CardContent extends Component {
 
     const style = {
       root: {
-        padding: 16,
+        padding: '0 30px 30px'
       },
     }
     return (
       <div style={style.root}>
-        <p>{children}</p>
+        {children}
       </div>
     )
   }

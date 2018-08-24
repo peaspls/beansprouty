@@ -6,6 +6,10 @@ import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
 class BlogPostCard extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     const { slug, title, date, excerpt, featuredImage } = this.props
 
@@ -18,11 +22,13 @@ class BlogPostCard extends Component {
     return (
       <div style={style.root}>
         <Card>
-          <CardHeader title={title} subheader={date} />
           <Link to={slug}>
-            <Img sizes={featuredImage.childImageSharp.sizes} />
+            <Img style={style.img} sizes={featuredImage.childImageSharp.sizes} />
           </Link>
-          <CardContent>{excerpt}</CardContent>
+          <CardContent>
+            <CardHeader title={title} subheader={date} />
+            {excerpt}
+          </CardContent>
         </Card>
       </div>
     )
