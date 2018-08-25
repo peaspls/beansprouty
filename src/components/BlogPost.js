@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 
 class BlogPost extends Component {
   render() {
-    const { post } = this.props
+    const { post, title, date } = this.props
 
     const style = {
       root: {
@@ -13,16 +13,33 @@ class BlogPost extends Component {
       post: {
         margin: 30,
         overflow: 'hidden',
+        fontWeight: '300',
       },
+      header: {
+        marginBottom: '30px',
+      },
+      title: {
+        fontSize: '2rem',
+      },
+      date: {
+        color: 'rgba(0, 0, 0, 0.54)',
+        fontSize: '0.875rem',
+        fontWeight: 400,
+      }
     }
 
     return (
       <div style={style.root}>
         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
-        <div
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          style={style.post}
-        />
+        <div style={style.post}>
+          <div style={style.header}>
+            <div style={style.title}>{title}</div>
+            <div style={style.date}>{date}</div>
+          </div>
+          <div
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </div>
       </div>
     )
   }

@@ -33,11 +33,14 @@ class Splash extends Component {
       },
       title: {
         color: '#B8D078',
+        fontWeight: 300,
+        fontSize: '3.0rem',
       },
       subtitle: {
         fontSize: '1.2rem',
         color: '#807a84',
         paddingTop: 15,
+        fontWeight: 300,
       },
       icon: {
         width: 48,
@@ -54,7 +57,7 @@ class Splash extends Component {
         </div>
         <div style={style.text}>
           <div style={style.title}>Beansprouty</div>
-          <div style={style.subtitle}>Listen to your heart</div>
+          <div style={style.subtitle}>My Vegan Traveling Blog</div>
         </div>
         <img src="icons/freepik/sprout.svg" style={style.icon} />
       </h1>

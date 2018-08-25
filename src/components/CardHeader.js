@@ -13,7 +13,7 @@ class CardHeader extends Component {
         minWidth: 120,
         color: 'rgba(0, 0, 0, 0.87)',
         fontSize: '1.5rem',
-        fontWeight: 400,
+        fontWeight: 300,
         fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
         lineHeight: '1.35417em',
         margin: 0,
@@ -22,7 +22,7 @@ class CardHeader extends Component {
       subheader: {
         color: 'rgba(0, 0, 0, 0.54)',
         fontSize: '0.875rem',
-        fontWeight: 400,
+        fontWeight: 300,
         fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
         lineHeight: '1.46429em',
         margin: 0,

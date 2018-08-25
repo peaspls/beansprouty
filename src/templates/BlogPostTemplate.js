@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Footer from '../components/Footer'
-import TopBar from '../components/TopBar'
 import BlogPost from '../components/BlogPost'
 
 class BlogPostTemplate extends React.Component {
@@ -10,12 +9,12 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const title = post.frontmatter.title || siteTitle
+    const date = post.frontmatter.date
 
     return (
       <div>
         <Helmet title={title} />
-        <TopBar title={title} />
-        <BlogPost post={post} />
+        <BlogPost post={post} title={title} date={date} />
         <Footer />
       </div>
     )

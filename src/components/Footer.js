@@ -11,6 +11,7 @@ class Footer extends React.Component {
         display: 'flex',
         justifyContent: 'space-evenly',
         color: 'rgb(128, 122, 132)',
+        fontWeight: 300,
       },
       block: {
         margin: 0,

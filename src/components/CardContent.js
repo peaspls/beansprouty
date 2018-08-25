@@ -6,7 +6,8 @@ class CardContent extends Component {
 
     const style = {
       root: {
-        padding: '0 30px 30px'
+        padding: '0 30px 30px',
+        fontWeight: 300,
       },
     }
     return (
