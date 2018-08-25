@@ -57,7 +57,7 @@ class Splash extends Component {
         </div>
         <div style={style.text}>
           <div style={style.title}>Beansprouty</div>
-          <div style={style.subtitle}>My Vegan Traveling Blog</div>
+          <div style={style.subtitle}>Vegan Traveling</div>
         </div>
         <img src="icons/freepik/sprout.svg" style={style.icon} />
       </h1>
