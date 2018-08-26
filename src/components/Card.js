@@ -14,6 +14,7 @@ class Card extends Component {
         padding: 0,
         maxWidth: 400,
         margin: 'auto',
+        position: 'relative',
       },
     }
 
