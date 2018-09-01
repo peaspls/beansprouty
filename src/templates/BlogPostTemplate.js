@@ -10,11 +10,13 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const title = post.frontmatter.title || siteTitle
     const date = post.frontmatter.date
+    const duration = post.frontmatter.duration
+    const author = post.frontmatter.author
 
     return (
       <div>
         <Helmet title={title} />
-        <BlogPost post={post} title={title} date={date} />
+        <BlogPost post={post} title={title} date={date} author={author} duration={duration} />
         <Footer />
       </div>
     )
@@ -37,6 +39,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        duration
         author
         featuredImage {
           childImageSharp {

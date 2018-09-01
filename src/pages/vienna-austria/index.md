@@ -2,6 +2,7 @@
 title: Vienna, Austria
 author: C. N. Aa. Thondrup
 date: "2018-04-27T11:11:03.284Z"
+duration: 28
 featuredImage: "./juice.jpg"
 ---
 

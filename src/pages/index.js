@@ -39,6 +39,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
+            duration
             title
             author
             featuredImage {

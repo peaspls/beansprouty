@@ -2,6 +2,7 @@
 title: Bordighera, Italy
 author: C. N. Aa. Thondrup
 date: "2018-06-25T18:00:00.000Z"
+duration: 26
 featuredImage: "./bordighera.jpg"
 ---
 

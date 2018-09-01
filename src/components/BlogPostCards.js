@@ -43,6 +43,7 @@ class BlogPostCards extends Component {
                 featuredImage={node.frontmatter.featuredImage}
                 excerpt={node.excerpt}
                 author={node.frontmatter.author}
+                duration={node.frontmatter.duration}
               />
               <CardSeparatorLine height="30px" />
               <img src={icon} style={style.icon} />

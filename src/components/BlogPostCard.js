@@ -12,7 +12,7 @@ class BlogPostCard extends Component {
   }
 
   render() {
-    const { slug, title, date, excerpt, featuredImage, author } = this.props
+    const { slug, title, date, excerpt, featuredImage, author, duration } = this.props
 
     const style = {
       root: {
@@ -28,7 +28,7 @@ class BlogPostCard extends Component {
             <Img style={style.img} sizes={featuredImage.childImageSharp.sizes} />
           </Link>
           <CardContent>
-            <CardHeader title={title} subheader={`By ${author}`} />
+            <CardHeader title={title} subheader={`By ${author}`} duration={duration} />
             {excerpt}
           </CardContent>
         </Card>

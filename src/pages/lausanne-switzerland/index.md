@@ -2,6 +2,7 @@
 title: Laussane, Switzerland
 author: C. N. Aa. Thondrup
 date: "2018-05-11T08:00:00.000Z"
+duration: 2
 featuredImage: "./badhunter.jpg"
 ---
 

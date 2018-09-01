@@ -2,6 +2,7 @@
 title: Basel, Switzerland
 author: C. N. Aa. Thondrup
 date: "2018-06-07T16:00:00.000Z"
+duration: 27
 featuredImage: "./river.jpg"
 ---
 

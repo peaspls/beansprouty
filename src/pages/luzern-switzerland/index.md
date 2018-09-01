@@ -2,6 +2,7 @@
 title: Luzern, Switzerland
 author: C. N. Aa. Thondrup
 date: "2018-05-03T12:00:00.000Z"
+duration: 5
 featuredImage: "./luzern.jpg"
 ---
 

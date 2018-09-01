@@ -2,6 +2,7 @@
 title: Feldkirch, Austria
 author: C. N. Aa. Thondrup
 date: "2018-04-28T09:00:00.000Z"
+duration: 1
 featuredImage: "./feldkirch.jpg"
 ---
 

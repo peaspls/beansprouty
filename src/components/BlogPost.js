@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 
 class BlogPost extends Component {
   render() {
-    const { post, title, date } = this.props
+    const { post, title, date, author, duration } = this.props
 
     const style = {
       root: {
@@ -21,7 +21,19 @@ class BlogPost extends Component {
       title: {
         fontSize: '2rem',
       },
+      author: {
+        color: 'rgba(0, 0, 0, 0.54)',
+        fontSize: '0.875rem',
+        fontWeight: 400,
+        display: 'inline-block',
+      },
       date: {
+        color: 'rgba(0, 0, 0, 0.54)',
+        fontSize: '0.875rem',
+        fontWeight: 400,
+        display: 'inline-block',
+      },
+      duration: {
         color: 'rgba(0, 0, 0, 0.54)',
         fontSize: '0.875rem',
         fontWeight: 400,
@@ -34,7 +46,9 @@ class BlogPost extends Component {
         <div style={style.post}>
           <div style={style.header}>
             <div style={style.title}>{title}</div>
-            <div style={style.date}>{date}</div>
+            <div style={style.author}>By {author}</div>
+            <div style={style.date}>, {date}</div>
+            <div style={style.duration}>Duration: {duration} days</div>
           </div>
           <div
             dangerouslySetInnerHTML={{ __html: post.html }}

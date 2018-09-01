@@ -2,6 +2,7 @@
 title: Bern, Switzerland
 author: C. N. Aa. Thondrup
 date: "2018-05-09T15:00:00.000Z"
+duration: 6
 featuredImage: "./bern.jpg"
 ---
 
