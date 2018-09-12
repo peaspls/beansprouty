@@ -7,23 +7,25 @@ import BlogPost from '../components/BlogPost'
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const title = post.frontmatter.title || siteTitle
+    const siteMetadata = this.props.data.site.siteMetadata
+    const title = post.frontmatter.title || siteMetadata.title
     const date = post.frontmatter.date
     const duration = post.frontmatter.duration
     const author = post.frontmatter.author
+    const featureImage = siteMetadata.siteUrl + post.frontmatter.featuredImage.childImageSharp.sizes.src
+    const url = siteMetadata.siteUrl + this.props.location.pathname
 
     return (
       <div>
         <Helmet>
           <title>{title}</title>
           <meta name="description" content={date} />
-          <meta name="image" content={post.frontmatter.featuredImage.childImageSharp.sizes.src} />
-          <meta property="og:url" content={this.props.location.pathname} />
+          <meta name="image" content={featureImage} />
+          <meta property="og:url" content={url} />
           <meta property="og:type" content="article" />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={date} />
-          <meta property="og:image" content={post.frontmatter.featuredImage.childImageSharp.sizes.src} />
+          <meta property="og:image" content={featureImage} />
         </Helmet>
         <BlogPost
           post={post}
@@ -46,6 +48,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
