@@ -15,7 +15,16 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <div>
-        <Helmet title={title} />
+        <Helmet>
+          <title>{title}</title>
+          <meta name="description" content={date} />
+          <meta name="image" content={post.frontmatter.featuredImage.childImageSharp.sizes.src} />
+          <meta property="og:url" content={this.props.location.pathname} />
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={date} />
+          <meta property="og:image" content={post.frontmatter.featuredImage.childImageSharp.sizes.src} />
+        </Helmet>
         <BlogPost
           post={post}
           title={title}

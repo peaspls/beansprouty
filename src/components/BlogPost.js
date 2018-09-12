@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
+import FacebookShare from './FacebookShare'
 
 const Wrapper = styled.div`
   max-width: 800px;
@@ -21,6 +22,14 @@ const Title = styled.div`
   font-size: 2rem;
 `
 
+const Info = styled.div`
+  display: inline-block;
+`
+
+const Social = styled.div`
+  float: right;
+`
+
 const Text = styled.div`
   color: rgba(0, 0, 0, 0.54);
   font-size: 0.875rem;
@@ -36,11 +45,15 @@ class BlogPost extends Component {
         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
         <Post>
           <Header>
-            <Title>{title}</Title>
-            <Text>
-              By {author}, {date}
-            </Text>
-            <Text>Duration: {duration} days</Text>
+            <Info>
+              <Title>{title}</Title>
+              <Text>By {author}</Text>
+              <Text>{date}</Text>
+              <Text>Duration: {duration} days</Text>
+            </Info>
+            <Social>
+              <FacebookShare />
+            </Social> 
           </Header>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Post>
