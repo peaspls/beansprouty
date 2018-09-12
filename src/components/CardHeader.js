@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   flex: 1 1 auto;
   margin: 20px 0;
-`;
+`
 
 const Title = styled.span`
   min-width: 120px;
@@ -14,7 +14,7 @@ const Title = styled.span`
   line-height: 1.35417em;
   margin: 0;
   display: block;
-`;
+`
 
 const TextBlock = styled.div`
   color: rgba(0, 0, 0, 0.54);
@@ -22,7 +22,7 @@ const TextBlock = styled.div`
   font-weight: 300;
   line-height: 1.46429em;
   margin: 0;
-`;
+`
 
 const Text = styled.span`
   color: rgba(0, 0, 0, 0.54);
@@ -30,7 +30,7 @@ const Text = styled.span`
   font-weight: 300;
   line-height: 1.46429em;
   margin: 0;
-`;
+`
 
 const Duration = styled.span`
   background: rgb(234, 195, 129);
@@ -43,7 +43,7 @@ const Duration = styled.span`
   padding: 3px;
   display: inline-block;
   text-align: center;
-`;
+`
 
 class CardHeader extends Component {
   render() {

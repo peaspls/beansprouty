@@ -9,7 +9,7 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   margin: 0 10px;
-`;
+`
 
 class BlogPostCard extends Component {
   constructor(props) {
@@ -17,7 +17,15 @@ class BlogPostCard extends Component {
   }
 
   render() {
-    const { slug, title, date, excerpt, featuredImage, author, duration } = this.props
+    const {
+      slug,
+      title,
+      date,
+      excerpt,
+      featuredImage,
+      author,
+      duration,
+    } = this.props
 
     return (
       <Wrapper>
@@ -27,7 +35,11 @@ class BlogPostCard extends Component {
             <Img sizes={featuredImage.childImageSharp.sizes} />
           </Link>
           <CardContent>
-            <CardHeader title={title} subheader={`By ${author}`} duration={duration} />
+            <CardHeader
+              title={title}
+              subheader={`By ${author}`}
+              duration={duration}
+            />
             {excerpt}
           </CardContent>
         </Card>

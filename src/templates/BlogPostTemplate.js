@@ -16,7 +16,13 @@ class BlogPostTemplate extends React.Component {
     return (
       <div>
         <Helmet title={title} />
-        <BlogPost post={post} title={title} date={date} author={author} duration={duration} />
+        <BlogPost
+          post={post}
+          title={title}
+          date={date}
+          author={author}
+          duration={duration}
+        />
         <Footer />
       </div>
     )

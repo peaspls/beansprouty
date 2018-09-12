@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Svg = styled.svg`
-  fill: ${props => props.entered ? '#4183C4' : 'rgb(128, 122, 132)' };
+  fill: ${props => (props.entered ? '#4183C4' : 'rgb(128, 122, 132)')};
   transition: 0.1s fill ease-in;
   cursor: pointer;
   width: 38px;
@@ -10,7 +10,7 @@ const Svg = styled.svg`
   padding: 5px;
   background: white;
   border-radius: 50px;
-`;
+`
 
 class GithubIcon extends Component {
   constructor(props) {

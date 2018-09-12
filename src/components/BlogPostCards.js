@@ -8,7 +8,7 @@ const Image = styled.img`
   width: 48px;
   display: block;
   margin: 0 auto;
-`;
+`
 
 const icons = [
   'bee',

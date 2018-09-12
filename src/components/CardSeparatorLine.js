@@ -6,7 +6,7 @@ const Image = styled.img`
   margin: 0 auto;
   width: 1px;
   height: ${props => props.height};
-`;
+`
 
 class CardSeparatorLine extends Component {
   render() {

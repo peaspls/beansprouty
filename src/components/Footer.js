@@ -25,7 +25,7 @@ const Link = styled.a`
   color: rgb(128, 122, 132);
   width: 60px;
   display: inline-block;
-  textAlign: center;
+  text-align: center;
 `
 
 const Span = styled.span`

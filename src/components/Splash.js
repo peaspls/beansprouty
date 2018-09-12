@@ -11,7 +11,7 @@ const Wrapper = styled.h1`
   justify-content: center;
   align-items: center;
   position: relative;
-`;
+`
 
 const Curve = styled.div`
   position: absolute;
@@ -20,7 +20,7 @@ const Curve = styled.div`
   right: 0;
   left: 0;
   z-index: -1;
-`;
+`
 
 const Text = styled.div`
   display: flex;
@@ -30,27 +30,27 @@ const Text = styled.div`
   width: 100%;
   padding: 25px;
   box-sizing: border-box;
-`;
+`
 
 const Title = styled.div`
-  color: #B8D078;
+  color: #b8d078;
   font-weight: 300;
-  font-size: 3.0rem;
-`;
+  font-size: 3rem;
+`
 
 const SubTitle = styled.div`
   font-size: 1.2rem;
   color: #807a84;
   padding-top: 15px;
   font-weight: 300;
-`;
+`
 
 const Image = styled.img`
   width: 48px;
   margin: 0;
   position: absolute;
   bottom: 0;
-`;
+`
 class Splash extends Component {
   render() {
     return (
