@@ -2,29 +2,29 @@ import React, { Component } from 'react'
 import get from 'lodash/get'
 import BlogPostCard from '../components/BlogPostCard'
 import CardSeparatorLine from '../components/CardSeparatorLine'
+import styled from 'styled-components'
+
+const Image = styled.img`
+  width: 48px;
+  display: block;
+  margin: 0 auto;
+`;
+
+const icons = [
+  'bee',
+  'bird',
+  'chicken',
+  'cow',
+  'fish',
+  'hen',
+  'pig',
+  'sheep',
+  'turtle',
+]
 
 class BlogPostCards extends Component {
   render() {
-    const icons = [
-      'bee',
-      'bird',
-      'chicken',
-      'cow',
-      'fish',
-      'hen',
-      'pig',
-      'sheep',
-      'turtle',
-    ]
     const { posts } = this.props
-
-    const style = {
-      icon: {
-        width: 48,
-        display: 'block',
-        margin: '0 auto',
-      },
-    }
 
     return (
       <div>
@@ -46,7 +46,7 @@ class BlogPostCards extends Component {
                 duration={node.frontmatter.duration}
               />
               <CardSeparatorLine height="30px" />
-              <img src={icon} style={style.icon} />
+              <Image src={icon} />
             </div>
           )
         })}

@@ -1,19 +1,17 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
+
+const Image = styled.img`
+  display: block;
+  margin: 0 auto;
+  width: 1px;
+  height: ${props => props.height};
+`;
 
 class CardSeparatorLine extends Component {
   render() {
     const { height } = this.props
-
-    const style = {
-      root: {
-        display: 'block',
-        margin: '0 auto',
-        width: 1,
-        height: height,
-      },
-    }
-
-    return <img src="svg/line.svg" style={style.root} />
+    return <Image src="svg/line.svg" height={height} />
   }
 }
 

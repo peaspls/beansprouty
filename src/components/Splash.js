@@ -1,66 +1,69 @@
 import React, { Component } from 'react'
 import AnimatedCurve from './AnimatedCurve'
+import styled, { css } from 'styled-components'
 
+const Wrapper = styled.h1`
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 70px);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+`;
+
+const Curve = styled.div`
+  position: absolute;
+  height: 95vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+`;
+
+const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+`;
+
+const Title = styled.div`
+  color: #B8D078;
+  font-weight: 300;
+  font-size: 3.0rem;
+`;
+
+const SubTitle = styled.div`
+  font-size: 1.2rem;
+  color: #807a84;
+  padding-top: 15px;
+  font-weight: 300;
+`;
+
+const Image = styled.img`
+  width: 48px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+`;
 class Splash extends Component {
   render() {
-    const style = {
-      root: {
-        marginBottom: 0,
-        marginTop: 0,
-        display: 'flex',
-        flexDirection: 'column',
-        height: 'calc(100vh - 70px)',
-        justifyContent: 'center',
-        alignItems: 'center',
-        position: 'relative',
-      },
-      curve: {
-        position: 'absolute',
-        height: '95vh',
-        top: 0,
-        right: 0,
-        left: 0,
-        zIndex: -1,
-      },
-      text: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-        padding: 25,
-        boxSizing: 'border-box',
-      },
-      title: {
-        color: '#B8D078',
-        fontWeight: 300,
-        fontSize: '3.0rem',
-      },
-      subtitle: {
-        fontSize: '1.2rem',
-        color: '#807a84',
-        paddingTop: 15,
-        fontWeight: 300,
-      },
-      icon: {
-        width: 48,
-        margin: 0,
-        position: 'absolute',
-        bottom: 0,
-      },
-    }
-
     return (
-      <h1 style={style.root}>
-        <div style={style.curve}>
+      <Wrapper>
+        <Curve>
           <AnimatedCurve fill="beige" />
-        </div>
-        <div style={style.text}>
-          <div style={style.title}>Beansprouty</div>
-          <div style={style.subtitle}>Vegan Traveling</div>
-        </div>
-        <img src="icons/freepik/sprout.svg" style={style.icon} />
-      </h1>
+        </Curve>
+        <Text>
+          <Title>Beansprouty</Title>
+          <SubTitle>Vegan Traveling</SubTitle>
+        </Text>
+        <Image src="icons/freepik/sprout.svg" />
+      </Wrapper>
     )
   }
 }

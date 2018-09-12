@@ -20,7 +20,6 @@ injectGlobal`
   blockquote::before {
     display: flex;
     content: "❞";
-    width: 30px;
     height: 30px;
     font-size: 1.4em;
     background-color: orange;

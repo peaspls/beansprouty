@@ -5,6 +5,11 @@ import CardContent from './CardContent'
 import CardDate from './CardDate'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
+  margin: 0 10px;
+`;
 
 class BlogPostCard extends Component {
   constructor(props) {
@@ -14,25 +19,19 @@ class BlogPostCard extends Component {
   render() {
     const { slug, title, date, excerpt, featuredImage, author, duration } = this.props
 
-    const style = {
-      root: {
-        margin: '0 10px',
-      },
-    }
-
     return (
-      <div style={style.root}>
+      <Wrapper>
         <Card>
           <CardDate date={date} />
           <Link to={slug}>
-            <Img style={style.img} sizes={featuredImage.childImageSharp.sizes} />
+            <Img sizes={featuredImage.childImageSharp.sizes} />
           </Link>
           <CardContent>
             <CardHeader title={title} subheader={`By ${author}`} duration={duration} />
             {excerpt}
           </CardContent>
         </Card>
-      </div>
+      </Wrapper>
     )
   }
 }

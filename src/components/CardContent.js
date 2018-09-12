@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
 
+const Wrapper = styled.div`
+  padding: 0 30px 30px;
+  font-weight: 300; 
+`;
 class CardContent extends Component {
   render() {
     const { children } = this.props
 
-    const style = {
-      root: {
-        padding: '0 30px 30px',
-        fontWeight: 300,
-      },
-    }
     return (
-      <div style={style.root}>
+      <Wrapper>
         {children}
-      </div>
+      </Wrapper>
     )
   }
 }
