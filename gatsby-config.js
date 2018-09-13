@@ -1,9 +1,12 @@
+// DEPLOY_PRIME_URL exists at build time on Netlify. See https://www.netlify.com/docs/continuous-deployment/
+const siteUrl = process.env.DEPLOY_PRIME_URL || "https://www.beansprouty.com"
+
 module.exports = {
   siteMetadata: {
     title: 'BeanSprouty',
     author: 'Christoffer N. Aa. Thondrup',
     description: 'A Vegan Travelers Blog',
-    siteUrl: 'https://www.beansprouty.com',
+    siteUrl: siteUrl,
   },
   pathPrefix: '/',
   plugins: [
