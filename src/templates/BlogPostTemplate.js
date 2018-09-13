@@ -14,17 +14,18 @@ class BlogPostTemplate extends React.Component {
     const author = post.frontmatter.author
     const featureImage = siteMetadata.siteUrl + post.frontmatter.featuredImage.childImageSharp.sizes.src
     const url = siteMetadata.siteUrl + this.props.location.pathname
+    const excerpt = this.props.data.markdownRemark.excerpt
 
     return (
       <div>
         <Helmet>
           <title>{title}</title>
-          <meta name="description" content={date} />
+          <meta name="description" content={excerpt} />
           <meta name="image" content={featureImage} />
           <meta property="og:url" content={url} />
           <meta property="og:type" content="article" />
           <meta property="og:title" content={title} />
-          <meta property="og:description" content={date} />
+          <meta property="og:description" content={excerpt} />
           <meta property="og:image" content={featureImage} />
         </Helmet>
         <BlogPost
@@ -54,6 +55,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
+      excerpt
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
