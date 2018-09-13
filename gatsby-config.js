@@ -1,10 +1,8 @@
 // BRANCH exists at build time on Netlify. See https://www.netlify.com/docs/continuous-deployment/
 const branch = process.env.BRANCH
 
-let siteUrl = 'https://www.beansprouty.com'
-if(branch && branch !== 'master') {
-  siteUrl = 'https://' + branch + '.beansprouty.com'
-}
+const subdomain = (!branch || branch === 'master') ? 'www' : branch
+const siteUrl = 'https://' + subdomain + '.beansprouty.com'
 
 module.exports = {
   siteMetadata: {
