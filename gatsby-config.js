@@ -1,5 +1,5 @@
-// DEPLOY_PRIME_URL exists at build time on Netlify. See https://www.netlify.com/docs/continuous-deployment/
-const siteUrl = process.env.DEPLOY_PRIME_URL || "https://www.beansprouty.com"
+// URL exists at build time on Netlify. See https://www.netlify.com/docs/continuous-deployment/
+const siteUrl = process.env.URL || "https://www.beansprouty.com"
 
 module.exports = {
   siteMetadata: {
