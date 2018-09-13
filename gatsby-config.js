@@ -1,5 +1,10 @@
-// URL exists at build time on Netlify. See https://www.netlify.com/docs/continuous-deployment/
-const siteUrl = process.env.URL || "https://www.beansprouty.com"
+// BRANCH exists at build time on Netlify. See https://www.netlify.com/docs/continuous-deployment/
+const branch = process.env.BRANCH
+
+let siteUrl = 'https://www.beansprouty.com'
+if(branch && branch !== 'master') {
+  siteUrl = 'https://' + branch + '.beansprouty.com'
+}
 
 module.exports = {
   siteMetadata: {
