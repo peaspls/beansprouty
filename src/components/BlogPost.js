@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 import FacebookShare from './FacebookShare'
+import moment from 'moment'
 
 const Wrapper = styled.div`
   max-width: 800px;
@@ -40,6 +41,8 @@ class BlogPost extends Component {
   render() {
     const { post, title, date, author, duration } = this.props
 
+    const readableDate = moment(date).format('DD MMM YYYY')
+
     return (
       <Wrapper>
         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
@@ -48,7 +51,7 @@ class BlogPost extends Component {
             <Info>
               <Title>{title}</Title>
               <Text>By {author}</Text>
-              <Text>{date}</Text>
+              <Text>{readableDate}</Text>
               <Text>Duration: {duration} days</Text>
             </Info>
             <Social>
